@@ -2,12 +2,13 @@
   <header class="app-header">
     <div class="container nav-container">
       <div class="logo">
-        <a href="/">文件禅</a>
+        <a href="/">AI 工程文档归档助手</a>
       </div>
       <nav>
         <ul class="nav-links">
           <li><NuxtLink to="/#home" @click="scrollToSection('home', $event)">首页</NuxtLink></li>
-          <li><NuxtLink to="/#pricing" @click="scrollToSection('pricing', $event)">价格</NuxtLink></li>
+          <li><NuxtLink to="/#features" @click="scrollToSection('features', $event)">软件特色</NuxtLink></li>
+          <li><NuxtLink to="/#versions" @click="scrollToSection('versions', $event)">更新日志</NuxtLink></li>
           <!-- <li><NuxtLink to="/#contact" @click="scrollToSection('contact', $event)">联系我们</NuxtLink></li> -->
         </ul>
       </nav>
@@ -54,7 +55,7 @@ const scrollToSection = (sectionId: string, event: MouseEvent) => {
 }
 
 .logo a {
-  font-size: 1.8rem;
+  font-size: 1.6rem; /* 略微调整字号以适应较长的文本 */
   font-weight: bold;
   color: white;
   text-decoration: none;

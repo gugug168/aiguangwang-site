@@ -22,8 +22,8 @@
 
 <style scoped>
 .hero-section {
-  /* 将图片作为背景，并保留渐变叠加 */
-  background-image: linear-gradient(135deg, rgba(31, 42, 64, 0.85) 0%, rgba(18, 24, 40, 0.95) 100%), url('/主界面.png');
+  /* 将图片作为背景，并调整渐变叠加以突出文字 */
+  background-image: linear-gradient(135deg, rgba(18, 24, 40, 0.95) 0%, rgba(10, 14, 22, 0.98) 100%), url('/主界面.png');
   background-size: cover; /* 覆盖整个区域 */
   background-position: center center; /* 图片居中显示 */
   background-repeat: no-repeat;

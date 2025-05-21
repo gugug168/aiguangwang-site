@@ -2,14 +2,13 @@
   <footer class="app-footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-logo">文件禅</div>
+        <div class="footer-logo">AI 工程文档归档助手</div>
         <div class="footer-links">
           <NuxtLink to="/#home" @click="scrollToSection('home', $event)">首页</NuxtLink>
-          <NuxtLink to="/#pricing" @click="scrollToSection('pricing', $event)">价格</NuxtLink>
-          <!-- 根据需要添加更多链接 -->
+          <NuxtLink to="/#features" @click="scrollToSection('features', $event)">软件特色</NuxtLink>
+          <NuxtLink to="/#versions" @click="scrollToSection('versions', $event)">更新日志</NuxtLink>
         </div>
-        <p class="copyright">&copy; Copyright {{ new Date().getFullYear() }} TechEntertainAI (风格模仿). All Rights Reserved.</p>
-        <p class="credits">灵感来源于 FileNeatAI 官网</p>
+        <p class="copyright">&copy; Copyright {{ new Date().getFullYear() }} AI 工程文档归档助手. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
