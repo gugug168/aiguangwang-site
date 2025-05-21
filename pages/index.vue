@@ -2,10 +2,11 @@
   <div class="homepage">
     <SectionsHeroSection id="home" />
     <SectionsFeaturesSection id="features" />
-    <SectionsVersionsSection id="versions" />
-    <!-- <SectionsVideoSection id="video-showcase" /> -->
+    <SectionsSoftwarePreviewSection id="preview" />
     <SectionsWhyChooseUsSection id="why-us" />
     <SectionsTestimonialsSection id="testimonials" />
+    <SectionsVersionsSection id="versions" />
+    <!-- <SectionsVideoSection id="video-showcase" /> -->
     <SectionsPricingSection id="pricing" />
   </div>
 </template>
@@ -24,13 +25,15 @@
 // 所以，如果你的组件在 `components/sections/HeroSection.vue`，
 // 你可以在模板中直接使用 `<SectionsHeroSection />`。
 
-// 暂时注释掉 useHead 以排查错误
-// useHead({
-//   title: '文件禅 - 首页 | AI智能文件整理与重命名',
-//   meta: [
-//     { name: 'description', content: '欢迎来到文件禅，体验与 FileNeatAI 类似风格的智能文件整理与重命名服务。让AI助您告别文件杂乱。' }
-//   ]
-// })
+// 如果需要，手动导入 SoftwarePreviewSection (尽管Nuxt3通常会自动导入)
+// import SectionsSoftwarePreviewSection from '~/components/sections/SoftwarePreviewSection.vue';
+
+useHead({
+  title: 'AI 工程文档归档助手 - 智能管理您的工程文档',
+  meta: [
+    { name: 'description', content: 'AI 工程文档归档助手，结合OCR与AI技术，专为工程领域用户设计，高效、智能地自动化管理和归档电脑中的工程文档，支持PDF、Word、图片等多种格式。' }
+  ]
+})
 </script>
 
 <style scoped>

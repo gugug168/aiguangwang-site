@@ -1,52 +1,86 @@
 <template>
-  <section class="versions-section">
+  <section class="versions-section" id="versions">
     <div class="container">
-      <h2 class="section-title">两大版本，满足不同需求</h2>
-      <div class="versions-grid">
-        <div class="version-card recommended">
-          <div class="version-header">
-            <h3>V3 版本 (AI增强版)</h3>
-            <span class="badge">推荐</span>
+      <h2 class="section-title">更新日志与说明</h2>
+      <div class="versions-grid-single-column">
+        <div class="version-card-log">
+          <div class="version-header-log">
+            <h3>版本号：1.1.0 (最新版)</h3>
+            <span class="version-date">2025/05/18</span>
           </div>
-          <div class="version-icon-placeholder">
-            <img src="/images/v3_icon.svg" alt="V3 Icon" v-if="true" />
-            <span v-else>🚀</span>
-          </div>
-          <ul class="features-list">
-            <li>全新交互式UI，自定义提示词，更灵活</li>
-            <li>AI Langchain驱动，整体质量与智能度大幅提升</li>
-            <li>高级文件整理与重命名，支持复杂场景</li>
-            <li>本地模型能力增强，兼顾隐私与效率</li>
+          <h4>更新内容：</h4>
+          <ul class="features-list-log">
+            <li>增加识别文件格式：html/pptx/txt/MD/CSV/GIF/BMP/WEBP/HTM格式</li>
+            <li>点击"AI处理"能够处理监控文件下所有层级文件夹里面的文件</li>
+            <li>修正界面中消息无法显示"监控期间放入监控文件夹的文件的处理消息"</li>
+            <li>明确不支持.doc和.ppt后缀的文件</li>
           </ul>
-          <div class="version-tag">最新版本: 3.0.3</div>
-          <div class="download-buttons">
-            <a href="#" class="btn-download primary">Windows 下载</a>
-            <a href="#" class="btn-download">MacOS Intel 下载</a>
-            <a href="#" class="btn-download">MacOS ARM 下载</a>
-          </div>
+          <h4>现能处理：</h4>
+          <ul class="features-list-log">
+            <li>图片: .jpg、.jpeg、.png、.bmp、.tiff、.gif、.webp</li>
+            <li>PDF: .pdf</li>
+            <li>Word 文档: .docx</li>
+            <li>Excel 表格: .xlsx</li>
+            <li>PowerPoint 演示文稿: .pptx</li>
+            <li>文本文件: .txt、.csv</li>
+            <li>Markdown 文件: .md</li>
+            <li>网页文件: .html、.htm</li>
+          </ul>
+          <p class="notes">注意：.doc、.ppt（老版 Word/PPT）不支持自动处理，需用户自行转为 .docx/.pptx。其它未列出的后缀会被自动跳过，并在日志中提示"不支持该格式"。</p>
         </div>
 
-        <div class="version-card">
-          <div class="version-header">
-            <h3>V2 版本 (经典版)</h3>
+        <div class="version-card-log">
+          <div class="version-header-log">
+            <h3>版本号：1.0.0</h3>
+            <span class="version-date">2025/05/13</span>
           </div>
-           <div class="version-icon-placeholder">
-            <img src="/images/v2_icon.svg" alt="V2 Icon" v-if="true" />
-            <span v-else>📦</span>
-          </div>
-          <ul class="features-list">
-            <li>基础文件整理与批量重命名功能</li>
-            <li>简洁界面，操作直观易上手</li>
-            <li>稳定可靠，满足日常整理需求</li>
-            <li>轻量级，资源占用小</li>
+          <h4>更新内容：</h4>
+          <ul class="features-list-log">
+            <li>正式上线。</li>
+            <li>暂时只支持pdf/png/jpg/gif/doc/docx格式，后续再增加。</li>
           </ul>
-          <div class="version-tag">稳定版本: 2.4.7</div>
-          <div class="download-buttons">
-            <a href="#" class="btn-download">Windows 下载</a>
-            <a href="#" class="btn-download">MacOS Intel 下载</a>
-            <a href="#" class="btn-download">MacOS ARM 下载</a>
-          </div>
         </div>
+
+        <div class="info-card">
+          <h3>【系统兼容性说明】</h3>
+          <p>本软件当前仅支持Windows系统运行，macOS/Linux版本正在开发中，预计将于下一次更新上线。</p>
+        </div>
+
+        <div class="info-card">
+          <h3>【安全提示】</h3>
+          <p>若遇到杀毒软件误报情况，请将程序添加信任白名单。我们将在后续版本持续优化安全兼容性。</p>
+        </div>
+
+        <div class="info-card">
+          <h3>【首次使用指引】</h3>
+          <ul class="features-list-log">
+            <li>设置工作目录：指定输入/输出文件夹路径</li>
+            <li>点击【保存配置】按钮</li>
+            <li>配置文件规则：自定义层级目录深度，设置命名模板（支持变量参数）</li>
+            <li>再次点击【保存配置】</li>
+            <li>重启软件使配置生效</li>
+          </ul>
+        </div>
+        
+        <div class="info-card">
+          <h3>【监控机制说明】</h3>
+          <p><strong>实时监控功能：</strong></p>
+          <ul class="features-list-log">
+            <li>新增文件：自动触发处理流程</li>
+            <li>历史文件：需手动点击【AI处理】按钮批量执行</li>
+          </ul>
+          <p><strong>特别注意：</strong> 修改配置后必须重启软件才能生效</p>
+        </div>
+
+        <div class="info-card">
+          <h3>【更新与反馈】</h3>
+          <ul class="features-list-log">
+            <li>✓ 每月至少一次功能更新</li>
+            <li>✓ 季度性重大版本升级</li>
+            <li>✓ 优先修复用户反馈问题</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
@@ -57,7 +91,7 @@
 
 <style scoped>
 .versions-section {
-  background-color: #121828; /* 与 body 背景一致或稍有区别 */
+  background-color: #121828;
   padding: 80px 0;
 }
 
@@ -69,141 +103,104 @@
   color: #ffffff;
 }
 
-.versions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 40px;
-}
-
-.version-card {
-  background-color: #1f2a40;
-  border: 1px solid #2d3748; /* 边框颜色 */
-  border-radius: 12px;
-  padding: 35px 30px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+.versions-grid-single-column {
   display: flex;
   flex-direction: column;
-  align-items: center; /* 图标等居中 */
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.version-card:hover {
-  transform: translateY(-5px);
-  border-color: #00d1b2;
+.version-card-log, .info-card {
+  background-color: #1f2a40;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.version-card.recommended {
-  border-top: 4px solid #00d1b2; /* 推荐版本的特殊标记 */
-}
-
-.version-header {
-  width: 100%;
+.version-header-log {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-  text-align: left;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2d3748;
 }
 
-.version-header h3 {
-  font-size: 1.7rem;
+.version-header-log h3 {
+  font-size: 1.5rem;
   color: #ffffff;
   font-weight: 600;
   margin: 0;
 }
 
-.badge {
-  background-color: #00d1b2;
-  color: #121828;
-  padding: 6px 12px;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.version-icon-placeholder {
-  font-size: 3.5rem;
-  color: #00d1b2;
-  margin-bottom: 25px;
-  /* 如果用图片:
-  width: 70px;
-  height: 70px;
-  img { width: 100%; height: 100%; object-fit: contain; }
-  */
-}
-
-.features-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 25px;
-  width: 100%;
-  text-align: left;
-}
-
-.features-list li {
-  font-size: 0.95rem;
-  line-height: 1.8;
+.version-date {
+  font-size: 0.9rem;
   color: #a0aec0;
-  padding-left: 25px;
-  position: relative;
+}
+
+.version-card-log h4, .info-card h3 {
+  font-size: 1.2rem;
+  color: #00d1b2;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
+.version-card-log:first-child h4, .info-card:first-child h3 {
+    margin-top: 0;
+}
 
-.features-list li::before {
-  content: '✓';
+.features-list-log {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.features-list-log li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #a0aec0;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.features-list-log li::before {
+  content: '•';
   color: #00d1b2;
   position: absolute;
   left: 0;
   font-weight: bold;
 }
 
-.version-tag {
-  font-size: 0.85rem;
-  color: #718096; /* 较暗的灰色 */
-  margin-bottom: 25px;
-  align-self: flex-start; /* 左对齐 */
+.notes {
+  font-size: 0.9rem;
+  color: #718096;
+  line-height: 1.6;
+  margin-top: 15px;
 }
 
-.download-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
+.info-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #a0aec0;
+  margin-bottom: 10px;
 }
 
-.btn-download {
-  background-color: #2d3748; /* 次要按钮颜色 */
-  color: #e0e0e0;
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: 500;
-  text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: block;
-  border: 1px solid #4a5568;
-}
-
-.btn-download:hover {
-  background-color: #4a5568;
-  color: white;
-}
-
-.btn-download.primary {
-  background-color: #00d1b2;
-  color: #121828;
-  border: none;
-}
-.btn-download.primary:hover {
-  background-color: #00bfa5;
+.info-card p strong {
+  color: #c0c8d8;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
   }
-  .version-header h3 {
-    font-size: 1.5rem;
+  .version-header-log h3 {
+    font-size: 1.3rem;
+  }
+  .version-card-log h4, .info-card h3 {
+    font-size: 1.1rem;
   }
 }
 </style> 

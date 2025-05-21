@@ -27,6 +27,7 @@ const testimonials = ref([
 </script>
 
 <style scoped>
+/* 样式可以保留或注释，如果模板完全移除，样式将不应用 */
 .testimonials-section {
   background-color: #121828;
   padding: 80px 0;
@@ -102,4 +103,4 @@ const testimonials = ref([
     font-size: 2rem;
   }
 }
-</style> 
+</style>

@@ -1,13 +1,13 @@
 <template>
   <section class="hero-section">
     <div class="container hero-content">
-      <h1 class="hero-title">文件禅：一键告别文件杂乱</h1>
+      <h1 class="hero-title">AI 工程文档归档助手</h1>
       <p class="hero-subtitle">
-        1. 文件整理，通过AI智能文件分类，快速分拣整理零乱且杂乱无章的文件。<br />
-        2. 重命名，通过AI分析文件内容，快速给整理后的文件更为专业的文件名。
+        智能整理AI工程文档，提高工作效率。<br />
+        专为工程师、资料员打造，实现扫描件、PDF及Word等文档的自动识别、分类、重命名和归档。
       </p>
       <p class="hero-subtitle-secondary">
-        把嘈杂信息集中整理管理，为复杂杂乱的文档清洁。
+        通过OCR技术与AI能力结合，允许用户高度自定义归档规则，显著提升工作效率，减少手动操作。
       </p>
       <!-- 登录注册按钮已按要求移除 -->
       <!-- 可以添加一个指向产品介绍或下载的按钮 -->
@@ -22,8 +22,11 @@
 
 <style scoped>
 .hero-section {
-  /* 目标网站有深色渐变背景 */
-  background: linear-gradient(135deg, #1f2a40 0%, #121828 100%); /* 深邃的蓝黑渐变 */
+  /* 将图片作为背景，并保留渐变叠加 */
+  background-image: linear-gradient(135deg, rgba(31, 42, 64, 0.85) 0%, rgba(18, 24, 40, 0.95) 100%), url('/主界面.png');
+  background-size: cover; /* 覆盖整个区域 */
+  background-position: center center; /* 图片居中显示 */
+  background-repeat: no-repeat;
   color: white;
   padding: 120px 0 80px; /* 顶部留出导航栏空间，再加额外padding */
   text-align: center;

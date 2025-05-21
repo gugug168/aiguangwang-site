@@ -1,25 +1,25 @@
 <template>
   <section class="why-choose-us-section">
     <div class="container">
-      <h2 class="section-title">为什么选择文件禅？</h2>
+      <h2 class="section-title">为什么选择 AI 工程文档归档助手？</h2>
       <div class="reasons-grid">
         <div class="reason-card">
-          <div class="reason-icon-placeholder"><span>📁</span></div>
-          <h3>更智能的文件整理</h3>
-          <p class="reason-subtitle">AI驱动，高效便捷，告别混乱</p>
-          <p>AI快速归纳分析，自动分类至对应文件夹，并智能推荐命名。复杂的文档结构也能轻松搞定，大幅提升工作效率。</p>
+          <div class="reason-icon-placeholder"><span>🛠️</span></div> <!-- 工程相关图标 -->
+          <h3>专为工程领域优化</h3>
+          <p class="reason-subtitle">深入理解行业痛点，满足专业需求</p>
+          <p>针对工程师、资料员的日常工作习惯和文档特点进行设计，提供最贴合实际应用场景的归档解决方案。</p>
         </div>
         <div class="reason-card">
-          <div class="reason-icon-placeholder"><span>🏷️</span></div>
-          <h3>更精准的文件重命名</h3>
-          <p class="reason-subtitle">精准识别，专业命名，规范统一</p>
-          <p>AI深度理解文件内容，无论是报告、设计稿还是代码，都能生成专业且易于检索的名称，让文件管理更规范。</p>
+          <div class="reason-icon-placeholder"><span>⚙️</span></div> <!-- 自动化/自定义图标 -->
+          <h3>高度自动化与自定义</h3>
+          <p class="reason-subtitle">智能处理，灵活配置，省心省力</p>
+          <p>从文件识别、分类到重命名、归档全程自动化处理。同时支持用户根据自身需求灵活设置归档层级、命名规则等。</p>
         </div>
         <div class="reason-card">
-          <div class="reason-icon-placeholder"><span>🛡️</span></div> <!-- 隐私图标 -->
-          <h3>更安全的模型选择</h3>
-          <p class="reason-subtitle">云端强大，本地安全，灵活选择</p>
-          <p>提供强大的云端AI模型处理能力，同时支持本地模型运行，文件无需上传第三方，充分保障数据隐私与安全。</p>
+          <div class="reason-icon-placeholder"><span>📈</span></div> <!-- 效率提升图标 -->
+          <h3>显著提升效率，减少错误</h3>
+          <p class="reason-subtitle">智能高效，精准可靠，保障质量</p>
+          <p>大幅度减少人工整理文档的重复劳动和时间成本，有效避免手动操作可能产生的错误和遗漏，确保归档的准确性和规范性。</p>
         </div>
       </div>
     </div>

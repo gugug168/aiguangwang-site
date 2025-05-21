@@ -1,23 +1,28 @@
 <template>
   <section class="features-section">
     <div class="container">
-      <h2 class="section-title">核心功能，AI 赋能</h2>
+      <h2 class="section-title">核心功能，专为工程领域打造</h2>
       <div class="features-grid">
         <div class="feature-item">
           <div class="feature-icon-wrapper">
-            <!-- 替换为SVG或图片 -->
-            <span class="feature-icon">📁</span>
+            <span class="feature-icon">📄</span>
           </div>
-          <h3>智能文件整理</h3>
-          <p>通过AI快速归纳文件内容，完成分类整理至对应文件夹，并为您自动推荐专业的命名方案。告别手动整理的繁琐。</p>
+          <h3>智能识别与分类</h3>
+          <p>采用先进OCR技术，精准识别扫描件、图片及PDF文档内容。结合AI能力，自动对工程图纸、合同、报告等进行智能分类。</p>
         </div>
         <div class="feature-item">
           <div class="feature-icon-wrapper">
-            <!-- 替换为SVG或图片 -->
-            <span class="feature-icon">🏷️</span>
+            <span class="feature-icon">⚙️</span>
           </div>
-          <h3>精准文件重命名</h3>
-          <p>AI深度分析文件内容，智能生成专业且符合规范的文档名称。无论是报告、图片还是代码片段，都能精准识别并命名。</p>
+          <h3>自定义归档与重命名</h3>
+          <p>用户可根据项目需求、文档类型、日期等自定义多级目录结构和文件命名规则，实现高度个性化的自动归档。</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <span class="feature-icon">🔄</span>
+          </div>
+          <h3>多格式支持与处理</h3>
+          <p>支持处理 PDF、Word、Excel、PPT 及多种图片格式。对无法直接读取内容的文档，自动尝试OCR识别，最大化兼容性。</p>
         </div>
       </div>
     </div>
@@ -43,7 +48,7 @@
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px; /* 加大间距 */
 }
 
