@@ -6,7 +6,7 @@
         <div class="footer-links">
           <NuxtLink to="/#home" @click="scrollToSection('home', $event)">首页</NuxtLink>
           <NuxtLink to="/#features" @click="scrollToSection('features', $event)">软件特色</NuxtLink>
-          <NuxtLink to="/#versions" @click="scrollToSection('versions', $event)">更新日志</NuxtLink>
+          <a href="https://fv2fbshiww0.feishu.cn/docx/QGMbdlKSKoFcAVxTKc0cCaEIngf" target="_blank">更新日志</a>
         </div>
         <p class="copyright">&copy; Copyright {{ new Date().getFullYear() }} AI 工程文档归档助手. All Rights Reserved.</p>
       </div>

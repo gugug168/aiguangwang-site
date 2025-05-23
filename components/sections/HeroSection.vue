@@ -11,7 +11,7 @@
       </p>
       <div class="cta-buttons-container">
         <NuxtLink to="/#features" class="cta-button primary">核心功能</NuxtLink>
-        <NuxtLink to="/#versions" class="cta-button secondary">更新日志</NuxtLink>
+        <a href="https://fv2fbshiww0.feishu.cn/docx/QGMbdlKSKoFcAVxTKc0cCaEIngf" target="_blank" class="cta-button secondary">更新日志</a>
       </div>
     </div>
   </section>

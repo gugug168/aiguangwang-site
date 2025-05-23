@@ -8,7 +8,7 @@
         <ul class="nav-links">
           <li><NuxtLink to="/#home" @click="scrollToSection('home', $event)">首页</NuxtLink></li>
           <li><NuxtLink to="/#features" @click="scrollToSection('features', $event)">软件特色</NuxtLink></li>
-          <li><NuxtLink to="/#versions" @click="scrollToSection('versions', $event)">更新日志</NuxtLink></li>
+          <li><a href="https://fv2fbshiww0.feishu.cn/docx/QGMbdlKSKoFcAVxTKc0cCaEIngf" target="_blank">更新日志</a></li>
           <!-- <li><NuxtLink to="/#contact" @click="scrollToSection('contact', $event)">联系我们</NuxtLink></li> -->
         </ul>
       </nav>

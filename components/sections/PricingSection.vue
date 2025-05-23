@@ -11,10 +11,10 @@
             我们致力于不断优化和增加更多实用功能，敬请期待后续更新。
           </p>
           <p class="free-text-secondary">
-            您的支持是我们前进的动力，欢迎通过 <NuxtLink to="/#versions" class="link-to-feedback">更新与反馈</NuxtLink> 区域提供宝贵意见。
+            您的支持是我们前进的动力，欢迎通过 <a href="https://fv2fbshiww0.feishu.cn/docx/QGMbdlKSKoFcAVxTKc0cCaEIngf" target="_blank" class="link-to-feedback">更新与反馈</a> 区域提供宝贵意见。
           </p>
           <!-- 可以保留一个下载或跳转到更新日志的按钮 -->
-           <NuxtLink to="/#versions" class="btn-cta primary">查看更新日志</NuxtLink>
+           <a href="https://fv2fbshiww0.feishu.cn/docx/QGMbdlKSKoFcAVxTKc0cCaEIngf" target="_blank" class="btn-cta primary">查看更新日志</a>
         </div>
       </div>
       <!-- <p class="pricing-note">具体付费方案详情请参考 FileNeatAI 官方网站，本站仅为风格演示。</p> -->

@@ -5,7 +5,7 @@
     <SectionsSoftwarePreviewSection id="preview" />
     <SectionsWhyChooseUsSection id="why-us" />
     <SectionsTestimonialsSection id="testimonials" />
-    <SectionsVersionsSection id="versions" />
+    <!-- <SectionsVersionsSection id="versions" /> -->
     <!-- <SectionsVideoSection id="video-showcase" /> -->
     <SectionsPricingSection id="pricing" />
   </div>
