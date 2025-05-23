@@ -7,7 +7,7 @@
         专为工程师、资料员打造，实现扫描件、PDF及Word等文档的自动识别、分类、重命名和归档。
       </p>
       <p class="hero-subtitle-secondary">
-        通过OCR技术与AI能力结合，允许用户高度自定义归档规则，显著提升工作效率，减少手动操作。
+        通过<span class="highlight-tech">OCR技术与AI能力结合</span>，允许用户<span class="highlight-custom">高度自定义归档规则</span>，<span class="highlight-efficiency">显著提升工作效率</span>，<span class="highlight-manual">减少手动操作</span>。
       </p>
       <div class="cta-buttons-container">
         <NuxtLink to="/#features" class="cta-button primary">核心功能</NuxtLink>
@@ -25,9 +25,9 @@
 .hero-section {
   /* 调整渐变以增强背景图可见性 */
   background-image: linear-gradient(135deg, rgba(18, 24, 40, 0.75) 0%, rgba(10, 14, 22, 0.85) 100%), url('/主界面.png');
-  background-size: cover;
+  background-size: contain; /* 修改: 让图片完整显示 */
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; /* 新增: 防止图片重复 */
   color: white;
   padding: 140px 0 100px; /* 增加上下padding */
   text-align: center;
@@ -135,4 +135,23 @@
     margin: 0 auto;
   }
 }
+
+/* 新增：用于突出显示描述文字中的关键词 */
+.highlight-tech {
+  color: #00d1b2; /* 主题绿色，科技感 */
+  font-weight: 600;
+}
+.highlight-custom {
+  color: #ffdd57; /* 黄色，强调自定义和灵活性 */
+  font-weight: 600;
+}
+.highlight-efficiency {
+  color: #3273dc; /* 蓝色，强调效率和成果 */
+  font-weight: 600;
+}
+.highlight-manual {
+  color: #ff3860; /* 红色/粉色，强调减少负面操作 */
+  font-weight: 600;
+}
+/* --- */
 </style>

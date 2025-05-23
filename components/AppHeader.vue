@@ -12,9 +12,14 @@
           <!-- <li><NuxtLink to="/#contact" @click="scrollToSection('contact', $event)">联系我们</NuxtLink></li> -->
         </ul>
       </nav>
-      <div class="lang-switcher">
-        <button class="lang-button">简体中文</button>
-        <!-- 可以扩展为下拉菜单 -->
+      <div class="right-section">
+        <div class="header-actions">
+          <a href="#" class="download-button">下载</a>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-button">简体中文</button>
+          <!-- 可以扩展为下拉菜单 -->
+        </div>
       </div>
     </div>
   </header>
@@ -84,6 +89,32 @@ const scrollToSection = (sectionId: string, event: MouseEvent) => {
   border-bottom: 2px solid #00d1b2; /* 目标站风格的下划线 */
 }
 
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* 下载按钮和语言切换器之间的间距 */
+}
+
+.header-actions {
+  /* display: flex; align-items: center; */ /* 由父级 .right-section 控制 */
+}
+
+.download-button {
+  background-color: #00d1b2; /* 主题色 */
+  color: #121828; /* 深色文字 */
+  padding: 0.6rem 1.3rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-button:hover {
+  background-color: #00bfa5; /* 主题色加深 */
+  transform: translateY(-1px);
+}
+
 .lang-switcher .lang-button {
   background-color: transparent;
   color: #e0e0e0;
@@ -108,10 +139,17 @@ const scrollToSection = (sectionId: string, event: MouseEvent) => {
     display: none; /* 简单隐藏，复杂情况需要JS切换 */
   }
    .logo a {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* 稍微再小一点，给右侧按钮留空间 */
    }
+  .right-section {
+    /* 在移动端，下载按钮和语言切换器会靠右 */
+  }
+  .download-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
   .lang-switcher .lang-button {
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 1rem; /* 统一按钮大小 */
     font-size: 0.8rem;
   }
 }
