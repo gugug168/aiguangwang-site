@@ -14,7 +14,7 @@
       </nav>
       <div class="right-section">
         <div class="header-actions">
-          <a href="#" class="download-button">下载</a>
+          <a href="https://www.blvip.vip/AI工程文件归档助手.exe" class="download-button">下载</a>
         </div>
         <div class="lang-switcher">
           <button class="lang-button">简体中文</button>
