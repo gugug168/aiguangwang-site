@@ -5,12 +5,12 @@
       <div class="image-gallery">
         <div class="image-container">
           <h3 class="image-title">主界面</h3>
-          <img src="/主界面.png" alt="AI 工程文档归档助手 - 主界面" class="preview-image" />
+          <img src="/main-interface.png" alt="AI 工程文档归档助手 - 主界面" class="preview-image" />
           <p class="image-caption-item">简洁直观的主操作界面，方便选择输入输出文件夹及查看处理日志。</p>
         </div>
         <div class="image-container">
           <h3 class="image-title">归档设置</h3>
-          <img src="/归档设置.png" alt="AI 工程文档归档助手 - 归档设置界面" class="preview-image" />
+          <img src="/archive-settings.png" alt="AI 工程文档归档助手 - 归档设置界面" class="preview-image" />
           <p class="image-caption-item">灵活的归档设置界面，用户可根据需求自定义文件结构、命名规则及AI参数等。</p>
         </div>
       </div>

@@ -29,9 +29,9 @@
 // import SectionsSoftwarePreviewSection from '~/components/sections/SoftwarePreviewSection.vue';
 
 useHead({
-  title: 'AI 工程文档归档助手 - 智能管理您的工程文档',
+  title: 'AI 工程文档归档助手 - 智能管理工程文档 | 爱土木',
   meta: [
-    { name: 'description', content: 'AI 工程文档归档助手，结合OCR与AI技术，专为工程领域用户设计，高效、智能地自动化管理和归档电脑中的工程文档，支持PDF、Word、图片等多种格式。' }
+    { name: 'description', content: 'AI 工程文档归档助手：基于先进OCR与AI技术，为工程专业人士打造。轻松实现电脑内海量工程文档的智能分类、归档与检索。支持PDF、Word及图片。立即提升您的文档管理效率！' }
   ]
 })
 </script>

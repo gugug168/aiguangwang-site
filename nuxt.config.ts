@@ -18,6 +18,20 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' } // 你需要在 public 目录下放置一个 favicon.ico 文件
+      ],
+      script: [ // 添加 Google Analytics
+        {
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-W00RFW012B'
+        },
+        {
+          children: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-W00RFW012B');
+          `
+        }
       ]
     }
   }

@@ -24,7 +24,7 @@
 <style scoped>
 .hero-section {
   /* 调整渐变以增强背景图可见性 */
-  background-image: linear-gradient(135deg, rgba(18, 24, 40, 0.75) 0%, rgba(10, 14, 22, 0.85) 100%), url('/主界面.png');
+  background-image: linear-gradient(135deg, rgba(18, 24, 40, 0.75) 0%, rgba(10, 14, 22, 0.85) 100%), url('/main-interface.png');
   background-size: contain; /* 修改: 让图片完整显示 */
   background-position: center center;
   background-repeat: no-repeat; /* 新增: 防止图片重复 */
